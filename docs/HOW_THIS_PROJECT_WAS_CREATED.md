@@ -1,18 +1,18 @@
-Create a repositor
+# How this project was created
 
-Create an empty GIT hub repository as:
+This document details how this project was created.
 
-SoftDevJohn/my-simple-git-maven-project and get the address as:
+
+
+# Create an empty repository on Github
+
+Create the empty Github repository as: SoftDevJohn/my-simple-git-maven-project and get the address as:
 
 https://github.com/SoftDevJohn/my-simple-git-maven-project.git
 
 
 
-
-
-
-
-# Create a maven project on Computer
+# Create a maven project on my Computer
 
 Create the Maven project as:
 
@@ -54,86 +54,43 @@ C:\dev\\my-simple-git-maven-project\
 
 
 
-Add the maven project to a
+# Add the maven project to a local git Repository
+
+cd \dev\my-simple-git-maven-project
+
+`git init`
+
+*This creates the local git repository .git in the current directory.*
+
+`git add .`
+
+*Stage all the files in the current directory.*
+
+`git commit -m "First commit"`
+
+*All the local staged files are not committed to the local repository.*
 
 
 
+git remote add origin https://github.com/SoftDevJohn/my-simple-git-maven-project.git
 
-
-Import into Eclipse as follows:
-
-File>Import>Existing Maven Projects>Next
-
-Root Directory: C:\Users\John\TestProjects\ScratchWorkspace\my-maven
-
-[CHECK] /pom.xml
-
-\>Finish
+*This adds the URL for the remote repository where the local repository will be pushed.*
 
 
 
-{This will add the files:
+`git remote -v`
 
-.classath
-
-.project
-
-and create the sub-directories:
-
-.settings
-
-target
-
-and then build the project. 
-
-}
+*This verifies that the remote origin has been added.*
 
 
 
-Now put this project under GIT control:
+`git push origin master`
 
-Create a local repository for it
-
-Eclipse>my-eclipse-git-maven>RC>Team>Share Project>Git>Next>
-
-Repository>Create... C:\Users\John\git\my-eclipse-git-maven-project
-
-\>Finish
-
-Eclipse>my-eclipse-git-maven>RC>Team>Commit>
-
-Drag all Unstaged changes files to Staged changes
-
-Add a commit message
+*Pushes the changes in your local repository to Github.*
 
 
 
+Now goto the Github website to verify that the local repository has been pused to git hub at: https://github.com/SoftDevJohn/my-simple-git-maven-project
 
 
 
-
-Now push it
-
-\>Commit
-
-Window>Show View>Git Repositories
-
-Select my-eclipse-git-maven-project in the Git Repositories view>RC
-
-\>Push Branch master>
-
-Remote Name: origin
-
-Location
-
-URL: <https://github.com/SoftDevJohn/my-eclipse-git-maven-project.git>
-
-Host: github.com
-
-Repository Path: /SoftDevJohn/my-eclipse-git-maven-project.git
-
-User: SoftDevJohn
-
-Password: *******
-
-\>Push
